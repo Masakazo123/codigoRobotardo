@@ -3,7 +3,7 @@ let encendido = false;
 
 function cambiarEstado() {
 
-    // Cambia el estado del LED
+    // Cambia el estado de los motores
     encendido = !encendido;
 
     // Actualiza el texto del estado en la página
@@ -23,7 +23,7 @@ function cambiarEstado() {
 }
 
 function controlarLED(estado) {
-    // Enviar solicitud POST al servidor para controlar el LED
+    // Enviar solicitud POST al servidor para controlar los motores
     fetch('/control', {
         method: 'POST',
         headers: {
